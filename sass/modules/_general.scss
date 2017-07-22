@@ -1,0 +1,68 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+html {
+    font-size: 62.5%;
+    @include screen(small) {
+        font-size: 58%;
+    }
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: $font;
+    -webkit-font-smoothing: antialiased;
+    overflow-y: scroll;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input,
+button {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.clear {
+    clear: both;
+}
+
+.page {
+	position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+    &--fluid {
+        padding: 120px 60px 0px;
+        display: block;
+        height: auto;
+    }
+    &--red {
+        // background-color: $red;
+        color: white;
+        transition: background-color 5s ease-in-out;
+    }
+    &--black {
+        background-color: #000;
+        color: white;
+    }
+}
+
+.footer {
+    // background-color: #757575;
+    background-color: #f2f2f2;
+    // border-top: 1px solid #ddd;s
+    height: 150px;
+}
