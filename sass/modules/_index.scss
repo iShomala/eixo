@@ -140,12 +140,33 @@
   }
 }
 
+.hero__bg-text {
+  z-index: -1;
+  font-size: 12rem;
+  position: absolute;
+  font-family: $fontSerif;
+  top: 45%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  color: #535353;
+  opacity: 0.2;
+  text-align: center;
+
+  span {
+    margin-right: 60px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
 .hero__icon {
   background-size: contain;
   background-position: center;
   background-image: url(../img/icons/hero.svg);
-  height: 500px;
-  width: 500px;
+  height: 540px;
+  width: 540px;
   margin: 45px auto 0;
 }
 
