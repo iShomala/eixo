@@ -4,66 +4,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="js/vendor/jquery.fullpage.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
 <body>
-    <div class="section section--hero">
-        <div class="section__center">
-            <h1 class="hero__title">
-                <span>e</span><span>i</span><span>x</span><span>o</span>
-            </h1>
-            <div class="hero__sub">
-                <span>d</span><span>e</span><span>s</span><span>i</span><span>g</span><span>n</span>
+    <div id="fullpage">
+        <div class="section section--hero">
+            <div class="section__center">
+                <!-- <h1 class="hero__title">
+                    <span>e</span><span>i</span><span>x</span><span>o</span>
+                </h1>
+                <div class="hero__sub">
+                    <span>d</span><span>e</span><span>s</span><span>i</span><span>g</span><span>n</span>
+                </div> -->
+                <div class="hero__icon"></div>
             </div>
         </div>
-    </div>
 
-    <div class="section section--about">
-        <div class="container container--flex">
-            <div class="section__left">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi possimus placeat alias optio, reprehenderit
-                    ut unde architecto quod fugit iure officiis deserunt natus numquam, et repellat sit at voluptates, magni.
-                </p>
+        <div class="section section--connect">
+            <div class="container container--flex">
+                <div class="section__left">
+                    <p>We are a collaborative digital design enterprise <em>connecting</em> clients with innovative solutions</p>
+                </div>
+                <div class="section__right section__right--has-icon">
+                    <div class="bg bg--connect"></div>
+                    <div class="icon icon--connect"></div>
+                </div>
             </div>
-            <div class="section__right"></div>
         </div>
-    </div>
 
-    <div class="section section--qualities">
-        <div class="container container--flex">
-            <div class="section__left">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi possimus placeat alias optio, reprehenderit
-                    ut unde architecto quod fugit iure officiis deserunt natus numquam, et repellat sit at voluptates, magni.
-                </p>
+        <div class="section section--understand">
+            <div class="container container--flex">
+                <div class="section__left">
+                    <p>Our most distinctive characteristic is <em>understanding</em> our client's needs.</p>
+                </div>
+                <div class="section__right section__right--has-icon">
+                    <div class="bg bg--understand"></div>
+                    <div class="icon icon--understand"></div>
+                </div>
             </div>
-            <div class="section__right"></div>
         </div>
-    </div>
 
-    <div class="section section--approach">
-        <div class="container container--flex">
-            <div class="section__left">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi possimus placeat alias optio, reprehenderit
-                    ut unde architecto quod fugit iure officiis deserunt natus numquam, et repellat sit at voluptates, magni.
-                </p>
+        <div class="section section--create">
+            <div class="container container--flex">
+                <div class="section__left">
+                    <p>we <em>create</em> unique solution oriented designs.</p>
+                </div>
+                <div class="section__right section__right--has-icon">
+                    <div class="bg bg--create"></div>
+                    <div class="icon icon--create"></div>
+                </div>
             </div>
-            <div class="section__right"></div>
         </div>
-    </div>
 
-    <div class="section section--contact">
-        <div class="container container--flex">
-            <div class="section__left section__left--center-text">
-                <h2 class="contact__title">Our DMs are always open.</h2>
-                <div class="contact__sub">Send us a positive message, a comment or feedback.</div>
+        <div class="section section--transcend">
+            <div class="container container--flex">
+                <div class="section__left">
+                    <p>Our work <em>transcends</em> the norm and whatever we build for you will set you apart </p>
+                </div>
+                <div class="section__right section__right--has-icon">
+                    <div class="bg bg--transcend"></div>
+                    <div class="icon icon--transcend"></div>
+                </div>
             </div>
-            <div class="section__left section__left--center-text">
-                <h2 class="contact__title">Request our portfolio.</h2>
-                <div class="contact__sub">Send us a positive message, a comment or feedback</div>
+        </div>
+
+        <div class="section section--contact">
+            <div class="container container--flex">
+                <div class="section__left section__left--center-text">
+                    <h2 class="contact__title">Our DMs are always open.</h2>
+                    <div class="contact__sub">Send us a positive message, a comment or feedback.</div>
+                </div>
+                <div class="section__left section__left--center-text">
+                    <h2 class="contact__title">Request our portfolio.</h2>
+                    <div class="contact__sub">Send us a positive message, a comment or feedback</div>
+                </div>
             </div>
         </div>
     </div>
 </body>
+
+
+<script src="js/vendor/jquery.min.js"></script>
+<script src="js/vendor/jquery.fullPage.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#fullpage').fullpage({
+            navigation: true,
+            navigationPosition: 'right',
+            navigationTooltips: ['', 'About', 'Approach', 'Work', 'Work', 'Contact']
+        });
+    });
+
+</script>
 
 </html>
